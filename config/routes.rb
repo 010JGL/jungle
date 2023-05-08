@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   root to: 'products#index'
-  #make a route to about for the footer link
+  
   get 'about' => 'about#index'
 
   resources :products, only: [:index, :show]
